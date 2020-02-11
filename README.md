@@ -82,7 +82,13 @@ Step 3:
  ```
  [{"LogDepartureTm":"14:20","LogArrivalTm":"16:40","LogMission":"Store","LogDeparturePl":"zhengzhou","LogDest":"wuhan","LogToSeller":"lalala","LogStorageTm":"1day","LogMOT":"truck","LogCopName":"shunfeng","LogCost":"10"},{"LogDepartureTm":"16:50","LogArrivalTm":"18:50","LogMission":"Store","LogDeparturePl":"wuhan","LogDest":"guangzhou","LogToSeller":"lalala","LogStorageTm":"1day","LogMOT":"truck","LogCopName":"shunfeng","LogCost":"10"}]
  ```
- 
+
+ 提交食品信息：
+
+```json
+curl -X POST 127.0.0.1:9090/re_form -d 'field1=1001&field1=999&field1=2222&field1=&field1=&field1=&field1=&field1=&field1=&field1='
+```
+
  <h4>部署在服务器上</h4>
  
  仅需修改server.js文件最后几行代码
