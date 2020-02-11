@@ -49,20 +49,20 @@ After that, if permission denied, into basci-network folder execute chmod a+x st
  
  Access `http://localhost:8000`
  
- This is no initializtion information. So you should write web form to insure you can query food information.
+ This is no initializtion information. So you should write web form to insure you can query obj information.
  
  For web form, i don't use javascript script to ensure what you write is right, so you should cram the form.
  
- For a same food ID, transit information can add many times, but batching and food information can only add one time.
+ For a same obj ID, transit information can add many times, but batching and obj information can only add one time.
  
  <h4>URL & JSON Format</h4>
  
- Get food information
+ Get obj information
  
 `http://localhost:8000/source/:id`
 
 ```
-{"FoodName":"Apple","FoodSpec":"123456","FoodMFGDate":"2018-8-24","FoodEXPDate":"10day","FoodLOT":"123","FoodQSID":"456","FoodMFRSName":"lalala","FoodProPrice":"2","FoodProPlace":"zhengzhou"}
+{"ObjName":"Apple","ObjSpec":"123456","ObjMFGDate":"2018-8-24","ObjEXPDate":"10day","ObjLOT":"123","ObjQSID":"456","ObjMFRSName":"lalala","ObjProPrice":"2","ObjProPlace":"zhengzhou"}
 ```
 
 Get batching information

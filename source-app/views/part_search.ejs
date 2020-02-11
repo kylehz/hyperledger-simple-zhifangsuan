@@ -9,13 +9,13 @@
 	</head>
 	<body ng-app="application" ng-controller="appController">
 		<div class="form-wrapper">
-			<input type="text" id="search" placeholder="食品编号..." ng-model="query_id" required>
+			<input type="text" id="search" placeholder="物件编号..." ng-model="query_id" required>
 			<input type="submit" value="搜索" id="submit" ng-click="queryPart()">
 		</div>
 		<table cellspacing="0" id="part_source">
 			<tr>
-				<th>食品ID</th>
-				<th>食品名称</th>
+				<th>物件ID</th>
+				<th>物件名称</th>
 			</tr>
 			<tr ng-repeat="part in part_source">
 				<td>{{part.IngID}}</td>

@@ -9,31 +9,31 @@
 	</head>
 	<body ng-app="application" ng-controller="appController">
 		<div class="form-wrapper">
-			<input type="text" id="search" placeholder="食品编号..." ng-model="query_id" required>
+			<input type="text" id="search" placeholder="物件编号..." ng-model="query_id" required>
 			<input type="submit" value="搜索" id="submit" ng-click="querySource()">
 		</div>
 		<table cellspacing="0" id="query_source">
 			<tr>
-				<th>食品名称</th>
-				<th>食品规格</th>
-				<th>食品生产日期</th>
-				<th>食品保质期</th>
-				<th>食品批次号</th>
-				<th>食品生产许可证编号</th>
-				<th>食品生产商名称</th>
-				<th>食品生产价格</th>
-				<th>食品生产所在地</th>
+				<th>物件名称</th>
+				<th>物件规格</th>
+				<th>物件生产日期</th>
+				<th>物件保质期</th>
+				<th>物件批次号</th>
+				<th>物件生产许可证编号</th>
+				<th>物件生产商名称</th>
+				<th>物件生产价格</th>
+				<th>物件生产所在地</th>
 			</tr>
 			<tr>
-          			<td>{{query_source.FoodName}}</td>
-          			<td>{{query_source.FoodSpec}}</td>
-          			<td>{{query_source.FoodMFGDate}}</td>
-          			<td>{{query_source.FoodEXPDate}}</td>
-		  		<td>{{query_source.FoodLOT}}</td>
-		  		<td>{{query_source.FoodQSID}}</td>
-		  		<td>{{query_source.FoodMFRSName}}</td>
-		  		<td>{{query_source.FoodProPrice}}</td>
-		  		<td>{{query_source.FoodProPlace}}</td>
+          			<td>{{query_source.ObjName}}</td>
+          			<td>{{query_source.ObjSpec}}</td>
+          			<td>{{query_source.ObjMFGDate}}</td>
+          			<td>{{query_source.ObjEXPDate}}</td>
+		  		<td>{{query_source.ObjLOT}}</td>
+		  		<td>{{query_source.ObjQSID}}</td>
+		  		<td>{{query_source.ObjMFRSName}}</td>
+		  		<td>{{query_source.ObjProPrice}}</td>
+		  		<td>{{query_source.ObjProPlace}}</td>
         		</tr>
 		</table>
 	</body>

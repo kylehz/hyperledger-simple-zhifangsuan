@@ -55,19 +55,19 @@ Step 3:
 
 在填写表单信息时，没有做过多的处理，因此每个选项都要尽量填写（配料的表单可以不填写完）
 
-配料及食品信息对于同一个Id只能添加一次，中转信息可以添加多次
+配料及物件信息对于同一个Id只能添加一次，中转信息可以添加多次
 
 <h4>url & json 格式</h4>
 
-获取食品信息
+获取物件信息
 
 `http://localhost:8000/source/:id`
 
 ```json
-{"FoodName":"Apple","FoodSpec":"123456","FoodMFGDate":"2018-8-24","FoodEXPDate":"10day","FoodLOT":"123","FoodQSID":"456","FoodMFRSName":"lalala","FoodProPrice":"2","FoodProPlace":"zhengzhou"}
+{"ObjName":"Apple","ObjSpec":"123456","ObjMFGDate":"2018-8-24","ObjEXPDate":"10day","ObjLOT":"123","ObjQSID":"456","ObjMFRSName":"lalala","ObjProPrice":"2","ObjProPlace":"zhengzhou"}
 ```
 
-获取食品配料信息
+获取物件配料信息
 
 `http://localhost:8000/part/:id`
 
@@ -83,7 +83,7 @@ Step 3:
  [{"LogDepartureTm":"14:20","LogArrivalTm":"16:40","LogMission":"Store","LogDeparturePl":"zhengzhou","LogDest":"wuhan","LogToSeller":"lalala","LogStorageTm":"1day","LogMOT":"truck","LogCopName":"shunfeng","LogCost":"10"},{"LogDepartureTm":"16:50","LogArrivalTm":"18:50","LogMission":"Store","LogDeparturePl":"wuhan","LogDest":"guangzhou","LogToSeller":"lalala","LogStorageTm":"1day","LogMOT":"truck","LogCopName":"shunfeng","LogCost":"10"}]
  ```
 
- 提交食品信息：
+ 提交物件信息：
 
 ```json
 curl -X POST 127.0.0.1:9090/re_form -d 'field1=1001&field1=999&field1=2222&field1=&field1=&field1=&field1=&field1=&field1=&field1='
