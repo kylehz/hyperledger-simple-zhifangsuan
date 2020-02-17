@@ -26,6 +26,7 @@ type ObjAllInfo struct {
 	ObjProInfo ProInfo   `json:ObjProInfo`
 	ObjIngInfo []IngInfo `json:ObjIngInfo`
 	ObjLogInfo []LogInfo `json:ObjLogInfo`
+	Test       string    `json:Test`
 }
 
 //生产信息
@@ -214,6 +215,8 @@ func (a *ObjChainCode) getObjInfo(stub shim.ChaincodeStubInterface, args []strin
 		}
 
 	}
+
+	objAllinfo.Test = "{}"
 
 	jsonsAsBytes, err := json.Marshal(objAllinfo)
 	if err != nil {
